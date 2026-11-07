@@ -45,8 +45,7 @@ class AddToCartCommand extends Command {
         // TODO: Implement the undo method.
         // It should call the `removeProduct` method of the `cartService`,
         // using the product's ID.
-        const productId = this.cartService.getProducts().length-1;
-        this.cartService.removeProduct(productId);
+        this.cartService.removeProduct(this.productId);
     }
 }
 
