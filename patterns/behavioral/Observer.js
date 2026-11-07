@@ -13,7 +13,7 @@ class OrderTracker {
 
     removeObserver(observer) {
         // TODO: Remove the observer from the `this.observers` array.
-        this.observers.filter(o => o.observer != observer)
+        this.observers = this.observers.filter(o => o.observer != observer);
     }
 
     notifyObservers() {
